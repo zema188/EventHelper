@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Event Helper</title>
+</head>
+<body>	
+	<div class="wrapper">
+		<div class="header-w">
+    <header class ="header container">
+        <div class="header__content">
+            <div class="header__logo logo">
+                <a href="index.html">
+                    Findsourser
+                </a>
+            </div>
+            <ul class="header__nav nav">
+                <li class="header__nav-item nav-item"><a href="#">Мероприятия</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Партнеры</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Правила платформы</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="header__login">
+                <div class="header__registration">Регистрация</div>
+                /
+                <div class="header__authorization">авторизация</div>
+            </div>
+            <div class="header__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-m">
+                <div class="header-m__top logo">
+                    <a href="index.html">
+                        Findsourser
+                    </a>
+                </div>
+                <ul class="header-m__nav nav">
+                    <li class="header-m__nav-item nav-item"><a href="#">Мероприятия</a></li><li class="header-m__nav-item nav-item"><a href="#">Партнеры</a></li><li class="header-m__nav-item nav-item"><a href="#">Правила платформы</a></li><li class="header-m__nav-item nav-item"><a href="#">Контакты</a></li>
+                </ul>
+                <div class="header-m__footer">
+                    <div class="header-m__login">
+                        <div class="header__registration">Регистрация</div>
+                        /
+                        <div class="header__authorization">авторизация</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- authorization Popup -->
+    <section class="authorization popup">
+        <div class="authorization__content">
+            <div class="authorization__title title">
+                Авторизация
+            </div>
+            <form class="authorization__form">
+                <div class="authorization__info">
+                    <input class="authorization__mail authorization__info-item input_blue " placeholder="Эл. почта">
+                    <div class="password-eye">
+                        <input class="authorization__password authorization__info-item input_blue" placeholder="Пароль" type="password">
+                        <div class="password-control">
+                            <img src="img/icons/eye-off.svg" alt="eye-off">
+                            <img src="img/icons/eye-show.svg" alt="eye-show">
+                        </div>
+                    </div>
+                </div>
+                <button class="authorization__create-btn btn btn_blue">
+                    Войти
+                </button>
+            </form>
+            <div class="authorization__footer">
+                <div class="authorization__reg">
+                    Нет аккаунта?
+                    <div class="authorization__reg-btn header__registration">
+                        Регистрация
+                    </div>
+                </div>
+            </div>
+            <div class="popup-close"></div>
+        </div>
+    </section>
+        <!-- Registration Popup -->
+        <section class="registration popup ">
+            <div class="registration__content">
+                <div class="registration__title title">
+                    Регистрация
+                </div>
+                <form class="registration__form">
+                    <div class="registration__info">
+                        <input class="registration__mail registration__info-item input_blue " placeholder="Эл. почта">
+                        <div class="password-eye">
+                            <input class="registration__password registration__info-item input_blue" placeholder="Пароль" type="password">
+                            <div class="password-control">
+                                <img src="img/icons/eye-off.svg" alt="eye-off">
+                                <img src="img/icons/eye-show.svg" alt="eye-show">
+                            </div>
+                        </div>
+                        <div class="password-eye">
+                            <input class="registration__password-confirm registration__info-item input_blue" placeholder="Потвердить пароль" type="password">
+                            <div class="password-control">
+                                <img src="img/icons/eye-off.svg" alt="eye-off">
+                                <img src="img/icons/eye-show.svg" alt="eye-show">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration__roles">
+                        <label class="registration__role registration__organizer">
+                            <input type="radio" name="role" checked>
+                            <span class="filter__custom-input"></span>
+                            <div class="registration__role-text">
+                                Организатор
+                            </div>
+                        </label>
+                        <label class="registration__role registration__sponsor">
+                            <input type="radio" name="role">
+                            <span class="filter__custom-input"></span>
+                            <div class="registration__role-text">
+                                Партнер
+                            </div>
+                        </label>
+                    </div>
+                    <button class="registration__create-btn btn btn_blue">
+                        Создать аккаунт
+                    </button>
+                </form>
+                <div class="registration__footer">
+                    <div class="registration__login">
+                        Есть аккаунт?
+                        <div class="registration__login-btn header__authorization">
+                            Авторизация
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"></div>
+            </div>
+        </section>
+</div>
+		<section class="preview">
+			<div class="preview__content">
+				<div class="preview__text">
+					<div class="preview__title">
+						Платформа по поиску партнеров на мероприятия
+					</div>
+					<div class="preview__subtitle">
+						Возможность найти партнера для вашего мероприятия, и также проспонсировать мероприятие деньгами, продуктами, дать скидку на ваш продукт
+					</div>
+					<div class="preview__text-footer">
+						<button class="preview__btn btn btn_blue">
+							Узнать больше
+						</button>
+						<div class="preview__pic_m">
+							<img src="img/icons/preview_m.png" alt="preview">
+							<img src="img/icons/preview.svg" alt="preview">
+						</div>
+					</div>
+				</div>
+				<div class="preview__pic">
+					<img src="img/icons/preview.svg" alt="preview">
+				</div>
+			</div>
+		</section>
+		<section class="events container">
+			<div class="events__top">
+				<div class="events__title">
+					Мероприятия
+				</div>
+				<div class="events__filter filter">
+					<div class="filter__title events__filter-title">
+						<div class="filter__title-pic">
+							<img src="img/icons/filter.svg" alt="filter">
+						</div>
+						<div class="filter__title-text">
+							Фильтры
+						</div>
+					</div>
+					<div class="filter__form events__filter-form active">
+						<div class="filter__form-list">
+							<label class="filter__form-item">
+								<input type="radio" name="event" checked>
+								<span class="filter__custom-input"></span>
+								По кол-ву активных партнеров (по умолчанию)
+							</label>
+							<label class="filter__form-item">
+								<input type="radio" name="event">
+								<span class="filter__custom-input"></span>
+								По дате проведения мероприятия (сначала самые новые)
+							</label>
+							<label class="filter__form-item filter__form-item_grey">
+								<input type="radio" name="event">
+								<span class="filter__custom-input"></span>
+								По дате проведения мероприятия (сначала, у которых дата окончания скоро)
+							</label>
+							<label class="filter__form-item filter__form-item_grey">
+								<input type="radio" name="event">
+								<span class="filter__custom-input"></span>
+								По кол-ву погашенных купонов, если они есть
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="events__content">
+				<div class="events__list">
+					<a href="event.html" class="events__list-item">
+						<div class="events__item-info">
+							<div class="events__item-name">
+								Митап для програмистов и 3D дизайнеров
+							</div>
+							<div class="events__item-date">
+								12.12.2022-16.12.2022
+							</div>
+						</div>
+						<div class="events__item-text">
+							<div class="events__item-about">
+								Вечер на котором собираются опытные и начинающие програмисты и 3D дизайнеры для обсуждения проблем перед которыми они встречаются при своей работе
+							</div>
+							<object class="events__item-btn-w">
+								<a href="event.html" class="events__item-btn">
+									посмотреть мероприятие
+								</a>
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</object>
+						</div>
+						<div class="events__item-pic">
+							<img src="img/pic/event.png" alt="event">
+						</div>
+					</a>
+					<a href="event.html" class="events__list-item">
+						<div class="events__item-info">
+							<div class="events__item-name">
+								Митап для програмистов и 3D дизайнеров
+							</div>
+							<div class="events__item-date">
+								12.12.2022-16.12.2022
+							</div>
+						</div>
+						<div class="events__item-text">
+							<div class="events__item-about">
+								Вечер на котором собираются опытные и начинающие програмисты и 3D дизайнеры для обсуждения проблем перед которыми они встречаются при своей работе
+							</div>
+							<object class="events__item-btn-w">
+								<a href="event.html" class="events__item-btn">
+									посмотреть мероприятие
+								</a>
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</object>
+						</div>
+						<div class="events__item-pic">
+							<img src="img/pic/event.png" alt="event">
+						</div>
+					</a>
+					<a href="event.html" class="events__list-item">
+						<div class="events__item-info">
+							<div class="events__item-name">
+								Митап для програмистов и 3D дизайнеров
+							</div>
+							<div class="events__item-date">
+								12.12.2022-16.12.2022
+							</div>
+						</div>
+						<div class="events__item-text">
+							<div class="events__item-about">
+								Вечер на котором собираются опытные и начинающие програмисты и 3D дизайнеры для обсуждения проблем перед которыми они встречаются при своей работе
+							</div>
+							<object class="events__item-btn-w">
+								<a href="event.html" class="events__item-btn">
+									посмотреть мероприятие
+								</a>
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</object>
+						</div>
+						<div class="events__item-pic">
+							<img src="img/pic/event.png" alt="event">
+						</div>
+					</a>
+				</div>
+				<div class="events__nav nav-pages">
+					<div class="nav-pages__list">
+						<div class="nav-pages__back">
+							<img src="img/icons/arrow_black.svg" alt="back">
+						</div>
+						<div class="nav-pages__page active">
+							1
+						</div>
+						<div class="nav-pages__page">
+							2
+						</div>
+						<div class="nav-pages__page">
+							3
+						</div>
+						<div class="nav-pages__points">
+							<img src="img/icons/points.svg" alt="points">
+						</div>
+						<div class="nav-pages__page nav-pages__last">
+							12
+						</div>
+						<div class="nav-pages__next">
+							<img src="img/icons/arrow_black.svg" alt="next">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partners container">
+			<div class="partners__top">
+				<div class="partners__title">
+					Партнеры
+				</div>
+				<div class="partners__filter filter">
+					<div class="filter__title partners__filter-title">
+						<div class="filter__title-pic">
+							<img src="img/icons/filter.svg" alt="filter">
+						</div>
+						<div class="filter__title-text">
+							Фильтры
+						</div>
+					</div>
+					<div class="filter__form active partners__filter-form">
+						<div class="filter__form-list">
+							<label class="filter__form-item">
+								<input type="radio" name="partner" checked>
+								<span class="filter__custom-input"></span>
+								По кол-ву проведенных мероприятий (по умолчанию)
+							</label>
+							<label class="filter__form-item">
+								<input type="radio" name="partner">
+								<span class="filter__custom-input"></span>
+								По дате регистрации (сначала самые старые)
+							</label>
+							<label class="filter__form-item filter__form-item_grey">
+								<input type="radio" name="partner">
+								<span class="filter__custom-input"></span>
+								По дате регистрации (сначала самые новые)
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="partners__content">
+				<div class="partners__list">
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/hot_hause.png" alt="partner">
+						</div>
+						<div class="partners__item-title">
+							Hot Hause
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатные товары
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/PHOENIX.png" alt="PHOENIX">
+						</div>
+						<div class="partners__item-title">
+							PHOENIX
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатная услуга
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/super_sup.png" alt="super_sup">
+						</div>
+						<div class="partners__item-title">
+							Супер суп
+						</div>
+						<div class="partners__item-subtitle">
+							Скидки на услугу
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/hot_hause.png" alt="partner">
+						</div>
+						<div class="partners__item-title">
+							Hot Hause
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатные товары
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/PHOENIX.png" alt="PHOENIX">
+						</div>
+						<div class="partners__item-title">
+							PHOENIX
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатная услуга
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/hot_hause.png" alt="partner">
+						</div>
+						<div class="partners__item-title">
+							Hot Hause
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатные товары
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/PHOENIX.png" alt="PHOENIX">
+						</div>
+						<div class="partners__item-title">
+							PHOENIX
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатная услуга
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/super_sup.png" alt="super_sup">
+						</div>
+						<div class="partners__item-title">
+							Супер суп
+						</div>
+						<div class="partners__item-subtitle">
+							Скидки на услугу
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/hot_hause.png" alt="partner">
+						</div>
+						<div class="partners__item-title">
+							Hot Hause
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатные товары
+						</div>
+					</a>
+					<a href="sponsor.html" class="partners__item">
+						<div class="partners__item-pic">
+							<img src="img/pic/PHOENIX.png" alt="PHOENIX">
+						</div>
+						<div class="partners__item-title">
+							PHOENIX
+						</div>
+						<div class="partners__item-subtitle">
+							Бесплатная услуга
+						</div>
+					</a>
+				</div>
+				<div class="partners__nav nav-pages">
+					<div class="nav-pages__list">
+						<div class="nav-pages__back">
+							<img src="img/icons/arrow_black.svg" alt="back">
+						</div>
+						<div class="nav-pages__page active">
+							1
+						</div>
+						<div class="nav-pages__page">
+							2
+						</div>
+						<div class="nav-pages__page">
+							3
+						</div>
+						<div class="nav-pages__points">
+							<img src="img/icons/points.svg" alt="points">
+						</div>
+						<div class="nav-pages__page nav-pages__last">
+							12
+						</div>
+						<div class="nav-pages__next">
+							<img src="img/icons/arrow_black.svg" alt="next">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rules container">
+			<div class="rules__top">
+				<div class="rules__title">
+					Правила платформы
+				</div>
+			</div>
+			<div class="rules__content">
+				<div class="rules__item">
+					Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения систем массового участия. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия.
+				</div>
+				<div class="rules__item">
+					Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения систем массового участия. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия.
+				</div>
+			</div>
+		</section>
+		<div class="footer-w">
+    <footer class="footer container">
+        <div class="footer__content">
+            <div class="footer__logo logo">
+                <a href="index.html">
+                    Findsourser
+                </a>
+            </div>
+            <ul class="footer__nav nav">
+                <li class="footer__nav-item nav-item"><a href="#">Мероприятия</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Партнеры</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Правила платформы</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="footer__contacts">
+                <li class="footer__contacts-item">
+                    <a href= "mailto:findsourser@gmail.com">findsourser@gmail.com</a>
+                </li>
+                <li class="footer__contacts-item">
+                    <a href= "tel:+375 29 4252 25-57">+375 29 4252 25-57</a>
+                </li>
+                <li class="footer__contacts-item footer__address">
+                    <span>Россия, Москва,</span> ул. Каракова д. 15
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+
+

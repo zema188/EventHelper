@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Event Helper</title>
+</head>
+<body>	
+	<div class="wrapper">
+		<div class="header-w">
+    <header class ="header container">
+        <div class="header__content">
+            <div class="header__logo logo">
+                <a href="index.html">
+                    Findsourser
+                </a>
+            </div>
+            <ul class="header__nav nav">
+                <li class="header__nav-item nav-item"><a href="#">Мероприятия</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Партнеры</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Правила платформы</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <!-- <a href="#" class="header__login">
+                Регистрация/авторизация
+            </a> -->
+
+            <!-- authorized profile -->
+            <div class="header__profile">
+                <a href="profile_organizer.html">
+                    <img src="img/icons/profile.svg" alt="profile">
+                </a>
+            </div>
+            <div class="header__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-m">
+                <div class="header-m__top logo">
+                    <a href="index.html">
+                        Findsourser
+                    </a>
+                </div>
+                <ul class="header-m__nav nav">
+                    <li class="header-m__nav-item nav-item"><a href="#">Мероприятия</a></li><li class="header-m__nav-item nav-item"><a href="#">Партнеры</a></li><li class="header-m__nav-item nav-item"><a href="#">Правила платформы</a></li><li class="header-m__nav-item nav-item"><a href="#">Контакты</a></li>
+                </ul>
+                <!-- <div class="header-m__footer">
+                    <a href="#" class="header-m__login">
+                        Регистрация/авторизация
+                    </a>
+                </div> -->
+
+                <!-- authorized profile -->
+                <div class="header-m__profile">
+                    <a href="profile_organizer.html">
+                        <img src="img/icons/profile.svg" alt="profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+		<section class="editing editing-statistics container">
+			<div class="editing__top">
+				<div class="editing__title">
+					Редактирование мероприятия
+				</div>
+			</div>
+			<div class="editing__content">
+				<div class="editing__info">
+					<div class="editing__meet">
+						Митап для програмистов
+					</div>
+					<textarea class="editing__about" placeholder="Описание (необязательно)"></textarea>
+					<input class="editing__place" placeholder="Место проведения (необязательно)">
+					<div class="editing__start">
+						<div class="editing__subtitle editing__start-subtitle">
+							Начало
+						</div>
+						<div class="editing__date">
+							<button class="editing__date-btn editing__start-btn btn btn_blue">
+								12 Декабря 2022
+								<img src="img/icons/arrow_white.svg" alt="arrow">
+							</button>
+							<div class="look-calendar">
+								<table class="calendar">
+								  <thead>
+								  <tr>
+								  <td><b>‹</b>
+								  <td colspan="5" class="month">
+								  <td><b>›</b>
+								  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+								  </thead>
+								  <tbody></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="editing__end">
+						<div class="editing__subtitle editing__end-subtitle">
+							Оканчание
+						</div>
+						<div class="editing__date">
+							<button class="editing__date-btn editing__end-btn btn btn_blue">
+								12 Декабря 2022
+								<img src="img/icons/arrow_white.svg" alt="arrow">
+							</button>
+							<div class="look-calendar">
+								<table class="calendar">
+								  <thead>
+								  <tr>
+								  <td><b>‹</b>
+								  <td colspan="5" class="month">
+								  <td><b>›</b>
+								  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+								  </thead>
+								  <tbody></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="editing__preview">
+					<div class="editing__pic">
+						<img src="img/pic/event_b.png" alt="event">
+					</div>
+					<div class="editing__preview-btns">
+						<button class="editing__add-pic editing__btn-pic btn btn_blue">
+							Добавить фото
+						</button>
+						<button class="editing__change-pic editing__btn-pic btn btn_white">
+							Изменить фото
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="chart">
+				<div class="chart__title">
+					Статистика
+				</div>
+				<div class="chart__labels">
+					<div class="chart__labels-list">
+						<div class="chart__label">
+							<div class="chart__label-color chart__label-color_blue">
+								
+							</div>
+							<div class="chart__label-name">
+								кол-во активаций
+							</div>
+						</div>
+						<div class="chart__label">
+							<div class="chart__label-color chart__label-color_red">
+								
+							</div>
+							<div class="chart__label-name">
+								покупка купонов
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chart__filter">
+					<div class="chart__filter-content">
+						<div class="chart__filter-item statistics-item_blue chart__filter-date active">
+							14 Дн.
+						</div>
+						<div class="chart__filter-item statistics-item_blue chart__filter-date">
+							Мясяц
+						</div>
+						<div class="chart__filter-item statistics-item_blue chart__filter-date">
+							Год
+						</div>
+						<div class="chart__filter-items_popup">
+							<div class="chart__filter-item chart__filter-month chart__filter-item_b">
+								Месяц
+							</div>
+							<div class="chart__filter-item chart__filter-limits chart__filter-item_b">
+								от - до
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chart__container-w">
+					<!-- <div class="chart__bar">
+						<div class="chart__bar-item">
+							300
+						</div>
+						<div class="chart__bar-item">
+							150
+						</div>
+						<div class="chart__bar-item">
+							0
+						</div>
+					</div> -->
+					<div class="chart__container">
+						<div class="chart__container-body">
+							<canvas	canvas id="myChart"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer-w">
+    <footer class="footer container">
+        <div class="footer__content">
+            <div class="footer__logo logo">
+                <a href="index.html">
+                    Findsourser
+                </a>
+            </div>
+            <ul class="footer__nav nav">
+                <li class="footer__nav-item nav-item"><a href="#">Мероприятия</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Партнеры</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Правила платформы</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="footer__contacts">
+                <li class="footer__contacts-item">
+                    <a href= "mailto:findsourser@gmail.com">findsourser@gmail.com</a>
+                </li>
+                <li class="footer__contacts-item">
+                    <a href= "tel:+375 29 4252 25-57">+375 29 4252 25-57</a>
+                </li>
+                <li class="footer__contacts-item footer__address">
+                    <span>Россия, Москва,</span> ул. Каракова д. 15
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="js/editing.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+
+

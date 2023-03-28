@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Event Helper</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header-w">
+    <header class ="header container">
+        <div class="header__content">
+            <div class="header__logo logo">
+                <a href="index.html">
+                    Findsourser
+                </a>
+            </div>
+            <ul class="header__nav nav">
+                <li class="header__nav-item nav-item"><a href="#">Мероприятия</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Партнеры</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Правила платформы</a></li>
+                <li class="header__nav-item nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <!-- <a href="#" class="header__login">
+                Регистрация/авторизация
+            </a> -->
+
+            <!-- authorized profile -->
+            <div class="header__profile">
+                <a href="profile_organizer.html">
+                    <img src="img/icons/profile.svg" alt="profile">
+                </a>
+            </div>
+            <div class="header__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-m">
+                <div class="header-m__top logo">
+                    <a href="index.html">
+                        Findsourser
+                    </a>
+                </div>
+                <ul class="header-m__nav nav">
+                    <li class="header-m__nav-item nav-item"><a href="#">Мероприятия</a></li><li class="header-m__nav-item nav-item"><a href="#">Партнеры</a></li><li class="header-m__nav-item nav-item"><a href="#">Правила платформы</a></li><li class="header-m__nav-item nav-item"><a href="#">Контакты</a></li>
+                </ul>
+                <!-- <div class="header-m__footer">
+                    <a href="#" class="header-m__login">
+                        Регистрация/авторизация
+                    </a>
+                </div> -->
+
+                <!-- authorized profile -->
+                <div class="header-m__profile">
+                    <a href="profile_organizer.html">
+                        <img src="img/icons/profile.svg" alt="profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+		<section class="profile profile-organizer container">
+			<div class="profile__top">
+				<div class="profile__title">
+					Личный кабинет
+				</div>
+			</div>
+			<div class="profile__content">
+				<div class="profile__settings">
+					<div class="profile__item profile__item_s create-event">
+						<div class="profile__item-pic">
+							<img src="img/icons/file.svg" alt="file">
+						</div>
+						<div class="profile__item-text">
+							+ Мероприятие
+						</div>
+					</div>
+					<div class="profile__item profile__item_s">
+						<div class="profile__item-pic">
+							<img src="img/icons/folder.svg" alt="folder">
+						</div>
+						<div class="profile__item-text">
+							Предложений (0) 
+						</div>
+					</div>
+					<div class="profile__item profile__item_b">
+						<div class="profile__item-top">
+							<div class="profile__item-title">
+								Редактировать мероприятия
+							</div>
+							<div class="profile__item-top-pic">
+								<img src="img/icons/location.svg" alt="location">
+							</div>
+						</div>
+						<div class="profile__list">
+							<a href="editing_statistics.html" class="profile__list-item">
+								Митап для програмистов
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</a>
+							<a href="editing_statistics.html" class="profile__list-item">
+								Митап для програмистов
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</a>
+						</div>
+						<div class="profile__item-footer">
+							<div class="profile__item-more profile__more-btn">
+								Больше...
+							</div>
+						</div>
+					</div>
+					<div class="profile__item profile__item_b">
+						<div class="profile__item-top">
+							<div class="profile__item-title">
+								Архив мероприятий
+							</div>
+							<div class="profile__item-top-pic">
+								<img src="img/icons/clock.svg" alt="clock	">
+							</div>
+						</div>
+						<div class="profile__list">
+							<div class="profile__list-item">
+								Митап для програмистов
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</div>
+							<div class="profile__list-item">
+								Митап для програмистов
+								<img src="img/icons/arrow_blue.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="profile__item-footer">
+							<div class="profile__item-more">
+								Больше...
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profile__data">
+					<div class="profile__data-title">
+						Профиль
+					</div>
+					<div class="profile__data-info">
+						<input class="profile__data-name profile__data-item" value="Кабасюк Иван Петрович">
+						<input class="profile__data-mail profile__data-item" value="Ivan@organizer12">
+						<input class="profile__data-nickname profile__data-item" value="Gkl£954">
+						<input class="profile__data-phone profile__data-item" placeholder="Телефон">
+						<input class="profile__data-mail_main profile__data-item" value="ivanpetrovich@gmail.com">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Event create popup -->
+		<section class="event-creation popup">
+			<div class="event-creation__content">
+				<div class="event-creation__top">
+					<div class="event-creation__title">
+						Создание мероприятия
+					</div>
+				</div>
+				<form class="event-creation__form">
+					<div class="event-creation__body">
+						<input class="event-creation__name input_blue " placeholder="Названия (обязательно)">
+						<textarea class="event-creation__about" placeholder="Описание (необязательно)"></textarea>
+						<input class="event-creation__place input_blue" placeholder="Место проведения (необязательно)">
+					</div>
+					<div class="event-creation__date">
+						<div class="event-creation__start">
+							<div class="event-creation__subtitle">
+								Начало
+							</div>
+							<div>
+								<button type="button" class="event-creation__start-btn event-creation__date-btn btn btn_blue">
+									12 Декабря 2022
+									<img src="img/icons/arrow_white.svg" alt="arrow">
+								</button>
+								<div class="look-calendar">
+									<table class="calendar">
+									  <thead>
+									  <tr>
+									  <td><b>‹</b>
+									  <td colspan="5" class="month">
+									  <td><b>›</b>
+									  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+									  </thead>
+									  <tbody></tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="event-creation__end">
+							<div class="event-creation__subtitle">
+								Оканчание
+							</div>
+							<div>
+								<button type="button" class="event-creation__end-btn event-creation__date-btn btn btn_blue">
+									12 Декабря 2022
+									<img src="img/icons/arrow_white.svg" alt="arrow">
+								</button>
+								<div class="look-calendar">
+									<table class="calendar">
+									  <thead>
+									  <tr>
+									  <td><b>‹</b>
+									  <td colspan="5" class="month">
+									  <td><b>›</b>
+									  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+									  </thead>
+									  <tbody></tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-creation__footer">
+						<button type="submit" class="event-creation__create-btn btn btn_blue">
+							Создать мероприятия
+						</button>
+					</div>
+				</form>
+				<div class="popup-close"></div>
+			</div>
+		</section>
+		<!-- Edit event popup -->
+		<section class="edit-event popup">
+			<div class="edit-event__content">
+				<div class="edit-event__top">
+					<div class="edit-event__title">
+						Редактировать мероприятия
+					</div>
+				</div>
+				<div class="edit-event__list">
+					<a href="editing_statistics.html" class="edit-event__item">
+						Митап для програмистов
+						<img src="img/icons/arrow_blue.svg" alt="arrow">
+					</a>
+					<a href="editing_statistics.html" class="edit-event__item">
+						Митап для програмистов и веб-дизайнеров
+						<img src="img/icons/arrow_blue.svg" alt="arrow">
+					</a>
+					<a href="editing_statistics.html" class="edit-event__item">
+						Митап для програмистов и веб-дизайнеров
+						<img src="img/icons/arrow_blue.svg" alt="arrow">
+					</a>
+					<a href="editing_statistics.html" class="edit-event__item">
+						Митап для програмистов
+						<img src="img/icons/arrow_blue.svg" alt="arrow">
+					</a>
+				</div>
+				<div class="popup-close"></div>
+			</div>
+		</section>
+		<div class="footer-w">
+    <footer class="footer container">
+        <div class="footer__content">
+            <div class="footer__logo logo">
+                <a href="index.html">
+                    Findsourser
+                </a>
+            </div>
+            <ul class="footer__nav nav">
+                <li class="footer__nav-item nav-item"><a href="#">Мероприятия</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Партнеры</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Правила платформы</a></li>
+                <li class="footer__nav-item nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="footer__contacts">
+                <li class="footer__contacts-item">
+                    <a href= "mailto:findsourser@gmail.com">findsourser@gmail.com</a>
+                </li>
+                <li class="footer__contacts-item">
+                    <a href= "tel:+375 29 4252 25-57">+375 29 4252 25-57</a>
+                </li>
+                <li class="footer__contacts-item footer__address">
+                    <span>Россия, Москва,</span> ул. Каракова д. 15
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
